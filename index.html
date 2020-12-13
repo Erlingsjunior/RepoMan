@@ -5,52 +5,90 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
 </head>
+<style>
+       
+    body {
+         background-color: white;
+    }
+    
+    .corpo {
+        background-color: rgb(147, 149, 151);
+        width: 1000px;
+    }
+
+    .cabeçalho {
+        font-family: Arial, Helvetica, sans-serif;
+        font-size: 2em;
+        font-weight: 600;
+        width: 800px;
+        height: 150px;
+        border: 1px, solid, black;
+        background-color: rgb(245, 223, 77);      
+    }
+
+    .titulo {
+        color: rgb(147, 149, 151);
+    }
+
+    
+</style>
+
 <body>
-    <header>
-    <h1>
-        Portifolio
+    <div class="corpo">
+    <header class="cabeçalho">
+    <h1 class="titulo">
+        Portifolio de Estudos
     </h1>
     </header>
+    
     <br/>
     
-    <section>
+    <section class="section-one">
         <h3>
-            <p>Nome: Erling Sriubas Junior</p>
+            <p class="titulo">Nome: Erling Sriubas Junior</p>
         </h3>
+        <div class="foto">
         <img src="https://avatars0.githubusercontent.com/u/64560604?s=460&u=88d80f0b5726ddb19c3a7d15ebe9bc8f753361c5&v=4" alt="foto de Erling" />
-        <p>Uma bela foto minha em casa codando um pouco para fazer um mundo melhor.</p>
+        </div>
+        <p class="foto2">Uma bela foto minha em casa codando um pouco para fazer um mundo melhor.</p>
     </section>
+
     <br/>
-    <section>
-        <h3>
+
+    <section class="section-two">
+        <h3 class="sobreMim">
             Quem sou eu?
         </h3>
-        <p>
+        <p class="maisSobreMim">
             Sou um estudante de Desenvolvimento Web, que esta mudando de carreira, pretendo me tornar
             um excepcional desenvolvedor,<br/> e por isso tenho me eforçado demais e fazendo o meu melhor.<br/>
             Levo comigo a frase: <strong>" A diferença entre aquele que chegou onde queria<br/>
             e o que não chegou, está em permanecer caminhando sempre"</strong>
         </p>
+
+        <ol class="listaOrdenada">
+            <li>HTML5</li>
+            <li>CSS3</li>
+            <li>JavaScript</li>
+            <li>Git e GitHub</li>
+            <li>React</li>
+        </ol>
     </section>
-    <ol>
-        <li>HTML5</li>
-        <li>CSS3</li>
-        <li>JavaScript</li>
-        <li>Git e GitHub</li>
-        <li>React</li>
-    </ol>
-    <div>
+    
+    <div class="links">
         <a href="https://github.com/Erlingsjunior" target="_blanck">Meu GitHub</a>
     </div>
     <div>
         <a href="https://www.linkedin.com/in/erling-sriubas-junior-972696128/" target="_blanck">Meu Linkedin</a>
     </div>
+    <br/>
 
-    <footer>
+    <footer class="rodape">
         <div>
             Exercicio de portfolio de Erling, primeiros dias na trybe.
         </div>
     </footer>
+</div>
 
 </body>
 </html>
