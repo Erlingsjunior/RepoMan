@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+</head>
+<body>
+  <div>
+    <span id="text"></span>
+  </div>
+  <button id="button_test">click aqui ja!</button>
+  <button id="button_menos">clica pra tirar</button>
+  <br/>
+  <br/>
+  <button id="button_10">clica para dar de dez!</button>
+  <button id="zerar">zera tudo</button>
+</body>
+<script>
+  let contagemDeCLick = 0
+  let mostraContagem = document.getElementById("text")
+
+  document.getElementById("button_test")
+          .addEventListener("click", () => mostraContagem.innerHTML = contagemDeCLick += 1)
+
+  document.getElementById("button_menos")
+          .addEventListener("click", () => mostraContagem.innerHTML = contagemDeCLick -= 1)
+
+  document.getElementById("button_10")
+          .addEventListener("click", () => mostraContagem.innerHTML = contagemDeCLick += 10)
+        
+  document.getElementById("zerar")
+          .addEventListener("click", () => mostraContagem.innerHTML = 0)
+
+          
+</script>
+</html>
